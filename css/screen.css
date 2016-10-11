@@ -51,9 +51,6 @@ li:last-child {
   padding-bottom: 0;
 }
 
-
-
-
 /* ===== LAYOUT STYLES ===== */
 
 #page {
@@ -85,12 +82,8 @@ li:last-child {
   }
 }
 
-@media screen and (min-width: 990px) {
+/* 990px */
+@media screen and (min-width: 61.875em) {
   #page {
     margin: 0;
-  }
-
-#pic {
-    width: 54%; /* 378px @ 700px */
-    float: left;
   }
