@@ -5,17 +5,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
     <link rel="stylesheet" media="screen" href="../css/screen.css" />
-    <style>
-      img, video {
-        display:block;
-        max-width: 30%
-      }
-    </style>
   </head>
   <body>
   <div id="page">
-  <header>
+    <nav class="navigation">
+      <ul>
+        <li id="nav-home"><a href="/">Home</a></li>
+        <li id="nav-re"><a href="/resume">Resume</a></li>
+        <li id="nav-rec"><a href="/recipe">Recipe for Jollof Rice</a></li>
+      </ul>
+    </nav>
   <main class="content">
+    <header>
     <h1>About Me</h1>
     <section class="h-card">
       <h2 class= "p-name">Modupeoreoluwa Olotu</h2>
@@ -28,46 +29,39 @@
         <li><a class="u-mail" href= "mailto:molotu@hawk.iit.edu">molotu@hawk.iit.edu</a></li>
       </ul>
     </section>
-  </main>
-      <nav class="navigation">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About Me</a></li>
-          <li><a href="/resume">Resume</a></li>
-          <li><a href="/recipe">Recipe for Jollof Rice</a></li>
-        </ul>
-      </nav>
-  </header>
-    <main class="content">
-      <section class="pic">
-        <h2>Hi there!</h2>
-        <figure class="photo">
-          <img src="../img/me.jpg" alt="Ore" />
-          <figcaption>A selfie of me in my room with good lighting!</figcaption>
-        </figure>  
-      </section>
-      <section class="background">
-        <h2>Background</h2>
-        <p>
+    </header>
+    <section class="pic">
+      <h2>Hi there!</h2>
+      <figure id="photo">
+        <img 
+          srcset="../img/me-300.jpg 300w, ../img/me.jpg 640w, ../img/me-50.jpg 50w" 
+          sizes="100vw" 
+          src="../img/me-300.jpg" alt="Ore" />
+        <figcaption id="cap">A selfie of me in my room with good lighting!</figcaption>
+      </figure>  
+    </section>
+    <section class="background">
+      <h2>Background</h2>
+      <p>
         My name is Modupeoreoluwa, which means I thank God for God's gift. The short form and what everyone calls me is
         "Ore", meaning gift. I was born in Nigeria, West Africa and lived there all my life until I moved to the United States three
         years ago. I'm the eldest with a younger sister and brother. I graduated high school here in Chicago in 2015 and started 
         college at Illinois Institute of Technology, Chicago. I'm in my second year; currently majoring in Information Technology and 
         Management. I do not have a specialization yet, but I'm thinking of going into cyber security. I'm also thinking of pursuing 
         Masters coupled with my Bachelors in my current major. I see myself as a goal-oriented, curious, and easy-going person.  
-        </p>
-      </section>
-      <section class="interests">
-        <h2>Hobbies</h2>
-        <ul class="hobbies">
-          <li>Cooking</li>
-          <li>Travelling</li>
-          <li>Watching TV shows</li>
-          <li>Exploring new things/places</li>
-          <li>Working with computers</li>
-        </ul>
-      </section>
-    </main>
+      </p>
+    </section>
+    <section class="interests">
+      <h2>Hobbies</h2>
+      <ul class="hobbies">
+        <li>Cooking</li>
+        <li>Travelling</li>
+        <li>Watching TV shows</li>
+        <li>Exploring new things/places</li>
+        <li>Working with computers</li>
+      </ul>
+    </section>
+  </main>
     <footer>
       <p>Site Design by Oreoluwa Olotu.
       Copyright &copy; 2016 Oreoluwa. All rights reserved
