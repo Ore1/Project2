@@ -14,47 +14,64 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   font-size: 1.125em; /* 18px/16px */
   line-height: 1.4375em; /* 23px/18px */
-  background-color: #F1EED9;
+  background-color: #FCFCFC;
   color: #222;
 }
 
 h1 {
   font-size: 1.728em; /* 27.648px/16px */
   line-height: 1.266em; /* 35px @ 27.648px */
+  padding-top: 1.065em; /* 23px 19.17px */
 }
 
 h2 {
   font-size: 1.44em; /* 23.04px/16px */
   line-height: 1.302em; /* 30px @ 23.04px */
+  padding-top: 0; /* 23px 19.17px */
 }
 
 h3 {
   font-size: 1.2em; /* 19.2px/16px */
   line-height: 1.302em; /* 25px @ 19.2px */
+  padding-top: 0;
 }
 
-p,
-ul {
+p {
   padding-bottom: 1.4375em; /* 23px */
 }
 
-p,
+ul,
 ol {
-  padding-bottom: 1.4375em; /* 23px */
+  padding-bottom: 0.3em; /* 23px */
 }
 
 li {
-  padding-bottom: 0.6389em; /* 11.5px = half gridline*/
+  padding-bottom: 0.7em; /* 11.5px = half gridline*/
 }
 
 li:last-child {
   padding-bottom: 0;
 }
 
+img,
+video {
+  display: block;
+  max-width: 30%;
+}
+
 /* ===== LAYOUT STYLES ===== */
 
 #page {
-	padding: 1.4375em 1.065em; /* 23px 19.17px */
+  padding: 1.4375em 1.065em; /* 23px 19.17px */
+}
+
+#photo {
+  padding: 1.065em; /* 23px 19.17px */
+}
+
+.cap {
+  padding-left: 1.065em; /* 23px 19.17px */
+  padding-top: 1.065em;
 }
 
 /* ===== MODULAR STYLES ===== */
@@ -64,19 +81,61 @@ li:last-child {
   padding-left: 1.065em; /* 19.17px */
 }
 
+.style li {
+  list-style-type: circle;
+  padding-left: 1.065em; /* 19.17px */
+}
+
 .ingredients ol {
   list-style-type: decimal;
   padding-left: 1.065em; /* 19.17px */
 }
 
+.navigation li {
+  float: left;
+  width: 20%;
+  list-style-type: none;
+  padding-bottom: 1.47em;
+}
+
+.navigation {
+  display: block;
+  text-align: center;
+  line-height: 2em;
+  background-color: #232B47;
+  color: #dedede;
+  border-bottom: 0;
+}
+
+.copyright {
+  display: block;
+  text-align: center;
+  line-height: 1em;
+  padding: 0.667em 0.33em; /* ~ 12px 6px @ 18px/em */
+  background-color: #232B47;
+  color: #dedede;
+  border-bottom: 0;
+}
+
+nav {
+  width: 85%;
+  left: 5%;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
 /* ===== STATE STYLES ===== */
 
 .content {
-    position: relative;
-    }
+  position: relative;
+}
 
-/* 980px @ 16px */
-@media screen and (min-width: 61.25em) {
+/* 1000px @ 16px */
+@media screen and (min-width: 62.5em) {
   .content {
     margin: 0 26.1% 0 31.3%;
   }
@@ -87,3 +146,7 @@ li:last-child {
   #page {
     margin: 0;
   }
+}
+footer {
+  clear: both;
+}
