@@ -101,7 +101,7 @@ video {
 .navigation {
   display: block;
   text-align: center;
-  line-height: 2em;
+  line-height: 1em;
   background-color: #232B47;
   padding: 0;
   color: #dedede;
