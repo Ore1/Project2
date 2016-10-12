@@ -5,30 +5,26 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
     <link rel="stylesheet" media="screen" href="../css/screen.css" />
-    <style>
-      img, video {
-        display:block;
-        max-width: 50%
-      }
-    </style>
   </head>
   <body>
   <div id="page">
-  <header>
+    <nav class="navigation">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About Me</a></li>
+        <li><a href="/resume">Resume</a></li>
+      </ul>
+    </nav>
+    <header>
     <h1>Recipe for Jollof Rice</h1>
-      <nav class="navigation">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About Me</a></li>
-          <li><a href="/resume">Resume</a></li>
-          <li><a href="/recipe">Recipe for Jollof Rice</a></li>
-        </ul>
-      </nav>
     </header>
     <section class="jollof pic">
       <h2>Jollof Rice</h2>
       <figure class="photo">
-        <img src="../img/jollof.jpg" alt="jollof rice" />
+        <img 
+        srcset="../img/jollof-300.jpg 300w, ../img/jollof.jpg 710w, ../img/jollof-150.jpg 150w, ../img/jollof-50.jpg 50w" 
+        sizes="100vw"
+        src="../img/jollof-50.jpg" alt="jollof rice" />
         <figcaption>A picture of jollof rice served with chicken with some mixed vegetables!</figcaption>
       </figure> 
       <cite>Picture taken from www.naijasphere.com</cite> 
@@ -125,7 +121,7 @@
       Copyright &copy; 2016 Oreoluwa. All rights reserved
       </p>
     </footer>
-  <div id="page">
+  </div>
   </body>
 </html>
 
