@@ -24,7 +24,6 @@ h1 {
   font-size: 1.728em; /* 27.648px/16px */
   line-height: 1.266em; /* 35px @ 27.648px */
   padding-top: 1.065em; /* 23px 19.17px */
-  text-transform: uppercase;
 }
 
 h2 {
@@ -70,8 +69,8 @@ video {
 }
 
 #photo {
-  margin-left: -0.916em;
-  margin-right: -0.916em;
+  margin-left: -0.916em auto;
+  margin-right: -0.916em auto;
   padding: 1.065em; /* 23px 19.17px */
 }
 
