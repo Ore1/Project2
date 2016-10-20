@@ -14,7 +14,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   font-size: 1.125em; /* 18px/16px */
   line-height: 1.4375em; /* 23px/18px */
-  background-color: #F3F3F3;
+  background-color: #CDB380; /*#F3F3F3;*/
   color: #222;
   font-family: serif;
   font-weight: 400;
@@ -24,12 +24,14 @@ h1 {
   font-size: 1.728em; /* 27.648px/16px */
   line-height: 1.266em; /* 35px @ 27.648px */
   padding-top: 1.065em; /* 23px 19.17px */
+  font-weight: bold;
 }
 
 h2 {
   font-size: 1.44em; /* 23.04px/16px */
   line-height: 1.302em; /* 30px @ 23.04px */
   padding-top: 0; /* 23px 19.17px */
+  font-weight: bold;
 }
 
 h3 {
@@ -37,6 +39,7 @@ h3 {
   line-height: 1.302em; /* 25px @ 19.2px */
   padding-top: 1.065;
   padding-left: -1.065;
+  font-weight: bold;
 }
 
 p {
@@ -59,8 +62,10 @@ li:last-child {
 img,
 video {
   display: block;
-  max-width: 30%;
+  max-width: 100%;
 }
+
+
 
 /* ===== LAYOUT STYLES ===== */
 
@@ -74,9 +79,19 @@ video {
   padding: 1.065em; /* 23px 19.17px */
 }
 
+.chi {
+  padding-top: 1.3em; /* 23px 19.17px */
+}
+
 .cap {
   padding-left: 1.065em; /* 23px 19.17px */
   padding-top: 1.065em;
+}
+
+#quote {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.4375em;
 }
 
 /* ===== MODULAR STYLES ===== */
@@ -96,6 +111,12 @@ video {
   padding-left: 1.065em; /* 19.17px */
 }
 
+.p-adr li {
+  display: inline-block;
+  text-align: center;
+
+}
+
 .navigation li {
   float: left;
   width: 20%;
@@ -103,11 +124,17 @@ video {
   border-bottom: 0;
   line-height: 1.266em;
   background-color: #7C635E; /*#232B47*/
-  color: #222;
   text-align: center;
   margin-left: 0.7em;
   text-transform: uppercase;
   font-weight: bold;
+  display: block;
+}
+
+.navigation li a {
+  display: block;
+  text-decoration: none;
+  color: #dedede;
 }
 
 .copyright {
