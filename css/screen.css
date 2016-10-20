@@ -28,8 +28,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.44em; /* 23.04px/16px */
-  line-height: 1.302em; /* 30px @ 23.04px */
+  font-size: 1.2em; /* 19.2px/16px */
+  line-height: 1.302em; /* 25px @ 19.2px */
   padding-top: 0; /* 23px 19.17px */
   font-weight: bold;
 }
@@ -52,7 +52,7 @@ ol {
 }
 
 li {
-  padding-bottom: 0.7em; /* 11.5px = half gridline*/
+  padding-bottom: 0; /* 11.5px = half gridline*/
 }
 
 li:last-child {
@@ -63,6 +63,7 @@ img,
 video {
   display: block;
   max-width: 100%;
+  margin: 0;
 }
 
 
@@ -83,8 +84,7 @@ video {
   padding-top: 1.3em; /* 23px 19.17px */
 }
 
-.cap {
-  padding-left: 1.065em; /* 23px 19.17px */
+.cap figcaption {
   padding-top: 1.065em;
 }
 
@@ -125,16 +125,15 @@ video {
   line-height: 1.266em;
   background-color: #7C635E; /*#232B47*/
   text-align: center;
-  margin-left: 0.7em;
   text-transform: uppercase;
   font-weight: bold;
-  display: block;
 }
 
 .navigation li a {
   display: block;
   text-decoration: none;
   color: #dedede;
+  margin-left: 5em;
 }
 
 .copyright {
@@ -159,19 +158,27 @@ nav {
   position: relative;
 }
 
-/* 1000px @ 16px */
-@media screen and (min-width: 62.5em) {
+/* 320px @ 16px for mobile scale */
+@media screen and (min-width: 30em) {
   .content {
     margin: 0;
   }
 }
 
-/* 1000px */
-@media screen and (min-width: 62.5em) {
+/* 768px @ 16px for tablet/ipad scale */
+@media screen and (min-width: 64em) {
   #page {
     margin: 0;
   }
 }
+
+/* 1224px @ 16px for desktop/laptop scale */
+@media screen and (min-width: 76.5em) {
+  #page {
+    margin: 0;
+  }
+}
+
 footer {
   clear: both;
 }
