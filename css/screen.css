@@ -14,7 +14,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   font-size: 1.125em; /* 18px/16px */
   line-height: 1.4375em; /* 23px/18px */
-  background-color: #CDB380; /*#F3F3F3;*/
+  background-color: /*#CDB380;*/ #F3F3F3;
   color: #222;
   font-family: serif;
   font-weight: 400;
@@ -59,10 +59,9 @@ li:last-child {
   padding-bottom: 0;
 }
 
-img,
-video {
+img {
   display: block;
-  max-width: 100%;
+  max-width: 85%;
   margin: 0;
 }
 
