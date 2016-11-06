@@ -21,23 +21,23 @@ html {
 }
 
 h1 {
-  font-size: 1.843em; /* 33.178px/18px */
-  line-height: 1.1996em; /* 39.8px @ 33.178px */
-  padding-top: 1.065em; /* 23px 19.17px */
+  font-size: 1.536em; /* 27.648px/18px */
+  line-height: 1.200em; /* 33.178px @ 27.648px */
+  /*padding-top: 0; /* 23px 19.17px */
   font-weight: bold;
 }
 
 h2 {
-  font-size: 1.536em; /* 27.648px/18px */
-  line-height: 1.200em; /* 33.178px @ 27.648px */
-  padding-top: 0; /* 23px 19.17px */
+  font-size: 1.28em; /* 23.04px/18px */
+  line-height: 1.536em; /* 27.648px @ 23.04px */
+  /*padding-top: 0;*/ 
   font-weight: bold;
 }
 
 h3 {
   font-size: 1.067em; /* 19.2px/18px */
   line-height: 1.2em; /* 23.04px @ 19.2px */
-  padding-top: 1.065;
+  padding-top: 1.273;
   padding-left: -1.065;
   font-weight: bold;
 }
@@ -72,6 +72,13 @@ nav {
   left: 0;
 }
 
+footer {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  background-color: #7C635E;
+}
+
 
 /* ===== LAYOUT STYLES ===== */
 
@@ -92,13 +99,13 @@ nav {
 #header {
   height: 100%;
   padding-bottom: 0;
-  padding: 2em; 
+  padding: 5.112em; 
   margin: 0 -1.278em;
   margin-top: -1.278em;
 }
 
 #photo {
-  margin-left: -0.916em auto;
+  /*margin-left: -0.916em auto;
   margin-right: -0.916em auto;
   padding: 1.278em; /* 23px 19.17px */
   padding-bottom: 0;
@@ -108,8 +115,9 @@ nav {
   padding-top: 0; 
 }
 
-.cap figcaption {
-  padding-top: 1.065em;
+.cap {
+  padding-top: 1.278em;
+  padding-bottom: 1.278em;
 }
 
 #quote {
@@ -117,12 +125,32 @@ nav {
   font-weight: bold;
   font-size: 1.125em; /* 18px/16px */
   padding: 1.278em;
+  padding-top: 1.278em;
+}
+
+.info {
+  float: left;
+  margin-left: -2.5em;
+  font-size: 1.28em; /* 23.04px/18px */
+}
+
+.h1 {
+  float: left;
+  margin-left: -0.2em;
+  font-size: 1em; /* 23.04px/18px */
+  padding-bottom: 1.278em;
 }
 
 /* ===== MODULAR STYLES ===== */
 
 .overview {
-  padding: 1.222em;
+  padding: 1.278em;
+  padding-top: 0;
+}
+
+.content {
+  padding: 1.278em;
+  padding-top: 0;
 }
 
 .content ul {
@@ -172,14 +200,20 @@ nav {
   text-decoration: underline;
 }
 
-
-.copyright {
+.copyright ul li {
   width: 100%;
   border-bottom: 0;
-  line-height: 1.266em;
+  /*line-height: 1.266em;*/
   background-color: #222; /*#7C635E;*/
+  font-size: 0.741em; /*13.333px/18px*/
+  /*text-align: center;*/
+}
+
+.copyright ul li a {
+  /*display: block;*/
+  text-decoration: none;
   color: #dedede;
-  text-align: center;
+  /*margin-left: -0.916em;*/
 }
 
 
@@ -192,7 +226,7 @@ nav {
 /* 320px @ 16px for mobile scale */
 @media screen and (min-width: 30em) {
   
-  }
+}
   
 
 /* 768px @ 16px for tablet/ipad scale */
