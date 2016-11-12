@@ -63,7 +63,7 @@ li:last-child {
 
 img {
   display: block;
-  max-width: 50%;
+  max-width: 100%;
   /*margin: 0;*/
 }
 
@@ -100,14 +100,7 @@ footer {
   margin-top: -1.278em;
 }
 
-/*#header {
-  padding-bottom: 0;
-  padding: 5.112em; 
-  margin: 0 -1.278em;
-  margin-top: -1.278em;
-}*/
-
-#header2 {
+#vegback {
   background: url(../img/veg-300.jpg) #49311c;
   -webkit-background-size: 100%; 
   -moz-background-size: 100%; 
@@ -124,13 +117,6 @@ footer {
   margin: 0 -1.278em;
   margin-top: -1.278em;
 }
-
-/*#header2 {
-  padding-bottom: 0;
-  padding: 5.112em; 
-  margin: 0 -1.278em;
-  margin-top: -1.278em;
-}*/
 
 #pic {
   /*margin-left: -0.916em auto;
@@ -175,6 +161,11 @@ footer {
 }
 
 .content {
+  padding: 1.278em;
+  padding-top: 0;
+}
+
+#page {
   padding: 1.278em;
   padding-top: 0;
 }
