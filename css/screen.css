@@ -17,8 +17,8 @@ html {
   background-color: /*#CDB380;*/ #F3F3F3;
   color: #222;
   font-family: serif;
-  font-weight: 400;
-}
+  font-weight: 400; 
+} 
 
 h1 {
   font-size: 1.536em; /* 27.648px/18px */
@@ -37,14 +37,16 @@ h2 {
 h3 {
   font-size: 1.067em; /* 19.2px/18px */
   line-height: 1.2em; /* 23.04px @ 19.2px */
+  /* UNITS? Negative necessary?
   padding-top: 1.273;
   padding-left: -1.065;
+  */
   font-weight: bold;
 }
 
 p {
   padding-bottom: 1.278em; /* 23px/18px */
-}
+} 
 
 ul,
 ol {
@@ -61,7 +63,7 @@ li:last-child {
 
 img {
   display: block;
-  max-width: 100%;
+  max-width: 50%;
   /*margin: 0;*/
 }
 
@@ -73,8 +75,6 @@ nav {
 }
 
 footer {
-  position: fixed;
-  width: 100%;
   text-align: center;
   background-color: #7C635E;
 }
@@ -94,17 +94,45 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: left;
-}
-
-#header {
-  height: 100%;
   padding-bottom: 0;
   padding: 5.112em; 
   margin: 0 -1.278em;
   margin-top: -1.278em;
 }
 
-#photo {
+/*#header {
+  padding-bottom: 0;
+  padding: 5.112em; 
+  margin: 0 -1.278em;
+  margin-top: -1.278em;
+}*/
+
+#header2 {
+  background: url(../img/veg-300.jpg) #49311c;
+  -webkit-background-size: 100%; 
+  -moz-background-size: 100%; 
+  -o-background-size: 100%; 
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover; 
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: left;
+  padding-bottom: 0;
+  padding: 5.112em; 
+  margin: 0 -1.278em;
+  margin-top: -1.278em;
+}
+
+/*#header2 {
+  padding-bottom: 0;
+  padding: 5.112em; 
+  margin: 0 -1.278em;
+  margin-top: -1.278em;
+}*/
+
+#pic {
   /*margin-left: -0.916em auto;
   margin-right: -0.916em auto;
   padding: 1.278em; /* 23px 19.17px */
@@ -129,13 +157,11 @@ footer {
 }
 
 .info {
-  float: left;
   margin-left: -2.5em;
   font-size: 1.28em; /* 23.04px/18px */
 }
 
 .h1 {
-  float: left;
   margin-left: -0.2em;
   font-size: 1em; /* 23.04px/18px */
   padding-bottom: 1.278em;
@@ -168,12 +194,6 @@ footer {
   padding-left: 1.065em; /* 19.17px */
 }
 
-.p-adr li {
-  display: inline-block;
-  text-align: center;
-
-}
-
 .navigation ul li {
   float: left;
   padding: 1.278em;
@@ -201,7 +221,6 @@ footer {
 }
 
 .copyright ul li {
-  width: 100%;
   border-bottom: 0;
   /*line-height: 1.266em;*/
   background-color: #222; /*#7C635E;*/
@@ -216,6 +235,13 @@ footer {
   /*margin-left: -0.916em;*/
 }
 
+.p-adr li a {
+  text-decoration: none;
+  color: #222;
+}
+
+
+
 
 /* ===== STATE STYLES ===== */
 
@@ -223,13 +249,13 @@ footer {
   position: relative;
 }*/
 
-/* 320px @ 16px for mobile scale */
+/* 320px x 568px @ 16px for mobile scale */
 @media screen and (min-width: 30em) {
   
 }
   
 
-/* 768px @ 16px for tablet/ipad scale */
+/* 768px x 1024px @ 16px for tablet/ipad scale */
 @media screen and (min-width: 64em) {
   
 }
