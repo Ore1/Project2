@@ -211,43 +211,37 @@ footer {
   text-decoration: underline;
 }
 
-.copyright ul li {
+.copyright {
   border-bottom: 0;
   /*line-height: 1.266em;*/
-  background-color: #222; /*#7C635E;*/
+  background-color: #dedede; /*#7C635E;*/
   font-size: 0.741em; /*13.333px/18px*/
   /*text-align: center;*/
 }
 
-.copyright ul li a {
-  /*display: block;*/
-  text-decoration: none;
-  color: #dedede;
-  /*margin-left: -0.916em;*/
-}
-
-.p-adr li a {
-  text-decoration: none;
-  color: #222;
-}
-
-
-
 
 /* ===== STATE STYLES ===== */
+
+/* 5:6 */
+/*5 + 6 = 11
+650 / 11.5px = 59.091
+5 x 59.091 = 295.455 Grid 1 
+6 x 59.091 = 354.546 Grid 2
+*/
+
 
 /*.content {
   position: relative;
 }*/
 
-/* 320px x 568px @ 16px for mobile scale */
-@media screen and (min-width: 30em) {
+/* 320px @ 16px for mobile scale */
+@media screen and (min-width: 20em) {
   
 }
   
 
-/* 768px x 1024px @ 16px for tablet/ipad scale */
-@media screen and (min-width: 64em) {
+/* 768px @ 16px for tablet/ipad scale */
+@media screen and (min-width: 48em) {
   
 }
 
