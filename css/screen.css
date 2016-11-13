@@ -14,15 +14,15 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   font-size: 1.125em; /* 18px/16px */
   line-height: 1.4375em; /* 23px/16px */
-  background-color: /*#CDB380;*/ #F3F3F3;
+  background-color: #F3F3F3;
   color: #222;
-  /*font-family: serif;*/
-  font-weight: 400; 
-} 
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 400;
+}
 
 h1 {
   font-size: 1.536em; /* 27.648px/18px */
-  line-height: 1.200em; /* 33.178px @ 27.648px */
+  line-height: 1.2em; /* 33.178px @ 27.648px */
   /*padding-top: 0; /* 23px 19.17px */
   font-weight: bold;
 }
@@ -32,6 +32,7 @@ h2 {
   line-height: 1.536em; /* 27.648px @ 23.04px */
   /*padding-top: 0;*/ 
   font-weight: bold;
+  color: #D2B48C;
 }
 
 h3 {
@@ -44,21 +45,21 @@ h3 {
   font-weight: bold;
 }
 
-p {
-  padding-bottom: 1.278em; /* 23px/18px */
+/*p {
+  padding-bottom: 1.278em; /* 23px/18px *
 } 
 
-ul,
+/*ul,
 ol {
-  padding-bottom: 0.3em; /* 23px */
-}
+  padding-bottom: 0.3em; /* 23px *
+}*/
 
 li {
   padding-bottom: 0; /* 11.5px = half gridline*/
 }
 
 li:last-child {
-  padding-bottom: 0;
+  padding-bottom: 0.5em;
 }
 
 img {
@@ -83,7 +84,7 @@ footer {
 /* ===== LAYOUT STYLES ===== */
 
 #header {
-  background: url(../img/coffee-300.jpg) #49311c;
+  background: url(../img/coffee-1280.jpg) #49311c;
   -webkit-background-size: 100%; 
   -moz-background-size: 100%; 
   -o-background-size: 100%; 
@@ -93,7 +94,6 @@ footer {
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: left;
   padding-bottom: 0;
   padding: 5.112em; 
   margin: 0 -1.278em;
@@ -101,7 +101,7 @@ footer {
 }
 
 #vegback {
-  background: url(../img/veg-300.jpg) #49311c;
+  background: url(../img/veg-1280.jpg) #49311c;
   -webkit-background-size: 100%; 
   -moz-background-size: 100%; 
   -o-background-size: 100%; 
@@ -111,14 +111,19 @@ footer {
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: left;
   padding-bottom: 0;
   padding: 5.112em; 
   margin: 0 -1.278em;
   margin-top: -1.278em;
 }
 
-.me {
+.pic {
+  padding-top: 1.278em;
+  padding-bottom: 0;
+}
+
+.jollof {
+  padding-top: 1.278em;
   padding-bottom: 0;
 }
 
@@ -127,10 +132,11 @@ footer {
 }
 
 .cap {
-  padding: 1.278em;
+  padding-top: 1.278em;
 }
 
 .quote {
+  color: #696969;
   font-style: italic;
   font-weight: bold;
   font-size: 1.125em; /* 18px/16px */
@@ -150,12 +156,14 @@ footer {
   font-family: 'Mate', serif;
 }
 
-.overview {
-  padding: 0 1.065em;
+.recipe {
+  text-align: center;
+  font-family: 'Mate', serif;
+  color: #D2B48C;
 }
 
-.home {
-  font-family: 'Mate', serif;
+.overview {
+  padding: 0 1.065em;
 }
 
 .content {
@@ -163,9 +171,17 @@ footer {
   padding-top: 0;
 }
 
+.background {
+  padding-top: 1.278em;
+}
+
 #page {
   padding: 1.278em;
   padding-top: 0;
+}
+
+.dish {
+  padding-top: 1.278em;
 }
 
 .p-education {
@@ -184,7 +200,6 @@ footer {
 
 .style li {
   list-style-type: circle;
-  padding-left: 1.065em; /* 19.17px */
 }
 
 .ingredients ol {
@@ -219,11 +234,13 @@ footer {
 }
 
 .copyright {
-  border-bottom: 0;
+  /*border-bottom: 0;
   /*line-height: 1.266em;*/
   background-color: #dedede; /*#7C635E;*/
   font-size: 0.741em; /*13.333px/18px*/
   /*text-align: center;*/
+  padding-top: 1.278em;
+  padding-bottom: 1.278em;
 }
 
 .p-adr li a {
@@ -231,37 +248,108 @@ footer {
   color: #222;
 }
 
+.p-adr li a:hover {
+  text-decoration: underline;
+}
 
 /* ===== STATE STYLES ===== */
 
 /* 5:6 */
 /*5 + 6 = 11
-650 / 11.5px = 59.091
-5 x 59.091 = 295.455 Grid 1 
-6 x 59.091 = 354.546 Grid 2
+768 / 11.5px = 66.8
+5 x 66.8 = 334px Grid 1 
+6 x 66.8 = 400.8px Grid 2
+
+1224 / 11.5px = 106.4px
+5 x 106.4px = 532px Grid 1 
+6 x 106.4px = 638.4px Grid 2
 */
-
-
-/*.content {
-  position: relative;
-}*/
-
-/* 320px @ 16px for mobile scale */
-@media screen and (min-width: 20em) {
   
+/* 500px @ 16px for tablet/ipad scale */
+@media screen and (min-width: 31.25em) {
+ .pic {
+    width: 43.49%; /*334/768 = 0.4349*/
+    margin-left: 17%; 
+  }
+  
+  .jollof { 
+    width: 43.49%; /*334/768 = 0.4349*/
+    float: right;
+  } 
+
 }
-  
-
 /* 768px @ 16px for tablet/ipad scale */
 @media screen and (min-width: 48em) {
-  
+  html {
+    font-size: 1.44em; /*23.04px @ 16px*/
+    line-height: 1.2em; /*27.648px @ 23.04px*/
+  }
+
+  .navigation ul li {
+    font-size: 1em; /*16px*/
+  }
+
+  .overview {
+    width: 43.49%; /*334/768 = 0.4349*/
+    padding-bottom: 1.278em;
+  }
+
+  .background {
+    width: 52.19%; /*400.8/768 = 0.5219*/
+    position: relative;
+    margin-left: 17%;
+  }
+
+  .interests {
+    width: 52.19%; /*400.8/768 = 0.5219*/
+    margin-left: 17%;
+  }
+
+  .goals {
+    width: 52.19%; /*400.8/768 = 0.5219*/
+    margin-left: 17%;
+  }
+
+  .pic {
+    width: 43.49%; /*334/768 = 0.4349*/
+    margin-left: 17%; 
+  }
+
+  .ingrelist {
+    width: 43.49%; /*334/768 = 0.4349*/
+    position: relative;
+  }
+
+  .jollof { 
+    width: 43.49%; /*334/768 = 0.4349*/
+    float: right;
+  }
+
+  footer {
+  clear: both;
+  }
+
 }
 
 /* 1224px @ 16px for desktop/laptop scale */
 @media screen and (min-width: 76.5em) {
-  
-}
+  .p-education {
+  margin-left: 35%;
+  }
 
-footer {
+  #resume {
+    margin-left: 17%;
+  }
+
+  .content ul {
+  list-style-type: none;
+  }
+
+  .style li {
+  list-style-type: none;
+  }
+
+  footer {
   clear: both;
+  }
 }
