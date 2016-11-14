@@ -13,7 +13,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 html {
   font-size: 1.125em; /* 18px/16px */
-  line-height: 1.4375em; /* 23px/16px */
+  line-height: 1.4375em; /* 23px /18px */
   background-color: #F3F3F3;
   color: #222;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -133,7 +133,8 @@ footer {
 }
 
 .cap {
-  padding-top: 1.278em;
+  font-style: italic;
+  padding-top: 0;
 }
 
 .quote {
@@ -161,6 +162,8 @@ footer {
   text-align: center;
   font-family: 'Mate', serif;
   color: #D2B48C;
+  font-weight: bolder;
+  padding-top: 0;
 }
 
 .overview {
