@@ -38,6 +38,7 @@ h2 {
 h3 {
   font-size: 1.067em; /* 19.2px/18px */
   line-height: 1.2em; /* 23.04px @ 19.2px */
+  color: #D2B48C;
   /* UNITS? Negative necessary?
   padding-top: 1.273;
   padding-left: -1.065;
@@ -164,6 +165,15 @@ footer {
 
 .overview {
   padding: 0 1.065em;
+  padding-bottom: 1.278em;
+}
+
+.over {
+  color: #D2B48C;
+}
+
+.serve {
+  padding-bottom: 1.278em;
 }
 
 .content {
