@@ -13,24 +13,24 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 html {
   font-size: 1.125em; /* 18px/16px */
-  line-height: 1.4375em; /* 23px /18px */
+  line-height: 1.222em; /* 22px /18px */
   background-color: #F3F3F3;
   color: #222;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: Open Sans Condensed, sans-serif;
   font-weight: 400;
 }
 
 h1 {
   font-size: 1.536em; /* 27.648px/18px */
   line-height: 1.2em; /* 33.178px @ 27.648px */
-  /*padding-top: 0; /* 23px 19.17px */
+  /*padding-top: 0; /* 22px 16.5px */
   font-weight: bold;
 }
 
 h2 {
   font-size: 1.28em; /* 23.04px/18px */
   line-height: 1.536em; /* 27.648px @ 23.04px */
-  /*padding-top: 0;*/ 
+  /*padding-top: 0;*/
   font-weight: bold;
   color: #D2B48C;
 }
@@ -48,7 +48,7 @@ h3 {
 
 /*p {
   padding-bottom: 1.278em; /* 23px/18px *
-} 
+}
 
 /*ul,
 ol {
@@ -56,11 +56,11 @@ ol {
 }*/
 
 li {
-  padding-bottom: 0; /* 11.5px = half gridline*/
+  padding-bottom: 0; /* 11px = half gridline*/
 }
 
 li:last-child {
-  padding-bottom: 0.5em;
+  padding-bottom: 0.3em; /* 11/2 = 5.5px */
 }
 
 img {
@@ -85,56 +85,55 @@ footer {
 /* ===== LAYOUT STYLES ===== */
 
 #header {
-  background: url(../img/coffee-1280.jpg) #49311c;
-  -webkit-background-size: 100%; 
-  -moz-background-size: 100%; 
-  -o-background-size: 100%; 
+  background: url(../img/coffee-1280.jpg) center center #49311c;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
   background-size: 100%;
   -webkit-background-size: cover;
-  -moz-background-size: cover; 
+  -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 0;
-  padding: 5.112em; 
-  margin: 0 -1.278em;
-  margin-top: -1.278em;
+  padding: 5.1em;
+  padding-left: 0;
 }
 
 #vegback {
-  background: url(../img/veg-1280.jpg) #49311c;
-  -webkit-background-size: 100%; 
-  -moz-background-size: 100%; 
-  -o-background-size: 100%; 
+  background: url(../img/veg-1280.jpg) center center #49311c;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
   background-size: 100%;
   -webkit-background-size: cover;
-  -moz-background-size: cover; 
+  -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 0;
-  padding: 5.112em; 
-  margin: 0 -1.278em;
-  margin-top: -1.278em;
+  padding-left: 0;
+  padding: 5.1em;
 }
 
 .pic {
-  padding-top: 1.278em;
+  padding-top: 1.222em;
   padding-bottom: 0;
 }
 
 .jollof {
-  padding-top: 1.278em;
+  padding-top: 1.222em;
   padding-bottom: 0;
 }
 
 .coffee {
-  padding-top: 0; 
+  padding-top: 0;
 }
 
 .cap {
   font-style: italic;
   padding-top: 0;
+  text-align: center;
 }
 
 .quote {
@@ -142,33 +141,33 @@ footer {
   font-style: italic;
   font-weight: bold;
   font-size: 1.125em; /* 18px/16px */
-  padding-left: 1.065em;
-  padding-right: 1.065em;
-  padding-top: 1.278em;
-  padding-bottom: 1.278em;
+  padding-left: 0.917em;
+  padding-right: 0.917em;
+  padding-top: 1.222em;
+  padding-bottom: 1.222em;
 }
 
 .info {
   text-align: center;
-  font-family: 'Mate', serif;
+  font-family: Mate, sans-serif;
 }
 
 .res {
   text-align: center;
-  font-family: 'Mate', serif;
+  font-family: Mate, sans-serif;
 }
 
 .recipe {
   text-align: center;
-  font-family: 'Mate', serif;
+  font-family: Mate, sans-serif;
   color: #D2B48C;
   font-weight: bolder;
   padding-top: 0;
 }
 
 .overview {
-  padding: 0 1.065em;
-  padding-bottom: 1.278em;
+  padding: 0 0.917em;
+  padding-bottom: 1.222em;
 }
 
 .over {
@@ -176,39 +175,43 @@ footer {
 }
 
 .serve {
-  padding-bottom: 1.278em;
+  padding-bottom: 1.222em;
 }
 
 .content {
-  padding: 1.278em;
+  padding: 1.222em;
   padding-top: 0;
 }
 
 .background {
-  padding-top: 1.278em;
+  padding-top: 1.222em;
 }
 
 #page {
-  padding: 1.278em;
+  padding: 1.222em;
   padding-top: 0;
 }
 
 .dish {
-  padding-top: 1.278em;
+  padding-top: 1.222em;
 }
 
 .p-education {
   list-style-type: none;
-  padding-left: 1.065em; /* 19.17px */
-  padding-top: 1.278em;
+  padding-left: 0.917em; /* 16.5px */
+  padding-top: 1.222em;
 }
 
 
 /* ===== MODULAR STYLES ===== */
 
+#list {
+  padding-left: 0;
+}
+
 .content ul {
   list-style-type: disc;
-  padding-left: 1.065em; /* 19.17px */
+  padding-left: 0.917em; /* 16.5px */
 }
 
 .style li {
@@ -217,13 +220,13 @@ footer {
 
 .ingredients ol {
   list-style-type: decimal;
-  padding-left: 1.065em; /* 19.17px */
+  padding-left: 0.917em; /* 16.5px */
 }
 
 .navigation ul li {
   float: left;
-  padding: 1.278em;
-  padding-left: 1.065em;
+  padding: 1.222em;
+  padding-left: 0.917em;
   border-bottom: 0;
   font-size: 0.741em; /*13.333px/18px*/
   text-transform: uppercase;
@@ -231,15 +234,24 @@ footer {
   display: inline-block;
 }
 
+.p-adr li a {
+  text-decoration: none;
+  color: #222;
+}
+
 .navigation ul li a {
   display: block;
   text-decoration: none;
   color: #222;
-  margin-left: -0.916em;
+  margin-left: -0.917em;
+}
+
+.p-adr li a:hover {
+  text-decoration: underline;
 }
 
 .navigation ul li:first-child {
-  margin-left: 0.916em;
+  margin-left: 0.917em;
 }
 
 .navigation ul li a:hover {
@@ -252,17 +264,8 @@ footer {
   background-color: #dedede; /*#7C635E;*/
   font-size: 0.741em; /*13.333px/18px*/
   /*text-align: center;*/
-  padding-top: 1.278em;
-  padding-bottom: 1.278em;
-}
-
-.p-adr li a {
-  text-decoration: none;
-  color: #222;
-}
-
-.p-adr li a:hover {
-  text-decoration: underline;
+  padding-top: 1.222em;
+  padding-bottom: 1.222em;
 }
 
 /* ===== STATE STYLES ===== */
@@ -270,27 +273,27 @@ footer {
 /* 5:6 */
 /*5 + 6 = 11
 768 / 11.5px = 66.8
-5 x 66.8 = 334px Grid 1 
+5 x 66.8 = 334px Grid 1
 6 x 66.8 = 400.8px Grid 2
 
 1224 / 11.5px = 106.4px
-5 x 106.4px = 532px Grid 1 
+5 x 106.4px = 532px Grid 1
 6 x 106.4px = 638.4px Grid 2
 */
-  
+
 /* 500px @ 16px for tablet/ipad scale */
 @media screen and (min-width: 31.25em) {
- .pic {
+  .pic {
     width: 43.49%; /*334/768 = 0.4349*/
-    margin-left: 17%; 
+    margin-left: 17%;
   }
-  
-  .jollof { 
+
+  .jollof {
     width: 43.49%; /*334/768 = 0.4349*/
     float: right;
-  } 
-
+  }
 }
+
 /* 768px @ 16px for tablet/ipad scale */
 @media screen and (min-width: 48em) {
   html {
@@ -304,7 +307,7 @@ footer {
 
   .overview {
     width: 43.49%; /*334/768 = 0.4349*/
-    padding-bottom: 1.278em;
+    padding-bottom: 1.222em;
   }
 
   .background {
@@ -325,7 +328,7 @@ footer {
 
   .pic {
     width: 43.49%; /*334/768 = 0.4349*/
-    margin-left: 17%; 
+    margin-left: 17%;
   }
 
   .ingrelist {
@@ -333,13 +336,13 @@ footer {
     position: relative;
   }
 
-  .jollof { 
+  .jollof {
     width: 43.49%; /*334/768 = 0.4349*/
     float: right;
   }
 
   footer {
-  clear: both;
+    clear: both;
   }
 
 }
@@ -347,7 +350,7 @@ footer {
 /* 1224px @ 16px for desktop/laptop scale */
 @media screen and (min-width: 76.5em) {
   .p-education {
-  margin-left: 35%;
+    margin-left: 35%;
   }
 
   #resume {
@@ -355,14 +358,14 @@ footer {
   }
 
   .content ul {
-  list-style-type: none;
+    list-style-type: none;
   }
 
   .style li {
-  list-style-type: none;
+    list-style-type: none;
   }
 
   footer {
-  clear: both;
+    clear: both;
   }
 }
