@@ -16,7 +16,7 @@ html {
   line-height: 1.222em; /* 22px /18px */
   background-color: #F3F3F3;
   color: #222;
-  font-family: Open Sans Condensed, sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   font-weight: 400;
 }
 
@@ -149,17 +149,17 @@ footer {
 
 .info {
   text-align: center;
-  font-family: Mate, sans-serif;
+  font-family: "Mate", sans-serif;
 }
 
 .res {
   text-align: center;
-  font-family: Mate, sans-serif;
+  font-family: "Mate", sans-serif;
 }
 
 .recipe {
   text-align: center;
-  font-family: Mate, sans-serif;
+  font-family: "Mate", sans-serif;
   color: #D2B48C;
   font-weight: bolder;
   padding-top: 0;
@@ -168,6 +168,15 @@ footer {
 .overview {
   padding: 0 0.917em;
   padding-bottom: 1.222em;
+}
+
+.overview ul li a {
+  text-decoration: none;
+  color: #222;
+}
+
+.overview ul li a:hover {
+  text-decoration: underline;
 }
 
 .over {
